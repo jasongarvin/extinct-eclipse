@@ -1,3 +1,7 @@
+---
+import background from '../assets/background.svg';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +12,8 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<slot />
+		<img id="background" src={background.src} alt="" fetchpriority="high" />
+		<slot id="container" />
 	</body>
 </html>
 
@@ -18,5 +23,22 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		height: 90%;
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+
+	#background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
 	}
 </style>

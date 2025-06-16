@@ -1,0 +1,61 @@
+<header>
+  <div class="header-container">
+    <span class="site-title">
+      <a href="/">Site Title</a>
+    </span>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="/about/">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 960px;
+    height: 10%;
+  }
+
+  a {
+    color: #111827;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: #242f47;
+    transition: 0.2s;
+  }
+
+  .header-container {
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    margin: auto 0;
+    font-size: 1.5em;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-list li {
+    margin: 0 0.5rem;
+    list-style-type: none;
+  }
+</style>
