@@ -1,26 +1,37 @@
-<main>
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Header />
+	<main>
 	<section id="hero">
 		<h1>
-			This is a sample site.
+			Get in touch.
 		</h1>
 
 		<section>
 			<p>
-				Sometimes you have to start small.
+				You can't. I lied.
 			</p>
 			<p>
-				Also, here's some other nonsense.
+				Still practicing with this silliness.
 			</p>
 		</section>
 	</section>
 </main>
+</Layout>
 
 <style>
 	main {
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
 		display: flex;
 		justify-content: center;
+		height: 90%;
 	}
 
 	#hero {
